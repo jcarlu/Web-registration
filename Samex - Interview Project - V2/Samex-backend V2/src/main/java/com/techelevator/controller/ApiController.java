@@ -1,6 +1,8 @@
 package com.techelevator.controller;
 
 
+import java.security.NoSuchAlgorithmException;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +27,7 @@ public class ApiController {
 	 private SubscriberDao subscriberDao;
 	 
 	   @PostMapping("/register")
-	    public void addSubscriber(@RequestBody  @Valid Subscriber subscriber ) {
+	    public void addSubscriber(@RequestBody  @Valid Subscriber subscriber ) throws NoSuchAlgorithmException {
 		   subscriberDao.saveSubscriber(subscriber);
 	    }
 
