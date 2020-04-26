@@ -5,7 +5,7 @@
       <h1 id="formHeader">Add your contact info to be informed about our latest business solutions</h1>
       <div id="errorAlert" role="alert" v-if="registrationErrors">
         <p>Please enter your information in the proper format;</p>
-        <p>- Names consist of letters only</p>
+        <p>- Names consist of letters / hyphens / apostrophes only</p>
         <p>- Phone number examples: (313)123-4567, 248-123-4567</p>
         <p>- Email: janedoe@example.com, johndoe@example.io, etc...</p>
       </div>

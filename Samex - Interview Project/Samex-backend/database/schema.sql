@@ -13,6 +13,3 @@ CREATE TABLE subscriber (
 );
 
 COMMIT TRANSACTION;
-
-INSERT INTO subscriber (hex_id, first_name, last_name, email, phone_number)
-VALUES ("h3r7y6u5", 'Billy', 'Bob', 'billyb785@gmail.com', '313-333-3333');
